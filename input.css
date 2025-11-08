@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hides scrollbars */
+.message,
+.slides-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.message::-webkit-scrollbar,
+.slides-container::-webkit-scrollbar {
+  display: none;
+}
+
+.active {
+  border-bottom: 4px solid gold;
+  @media (min-width: 768px) { 
+    color: gold; 
+  }
+}
